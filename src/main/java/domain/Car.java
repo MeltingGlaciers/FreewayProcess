@@ -1,13 +1,25 @@
 package domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@AllArgsConstructor
 public class Car {
 
-    CarStatus status;
-    int initSpeed;
+    private CarStatus status;
+
+    private int initSpeed;
+
+    public Car(int initSpeed){
+
+        this.initSpeed = initSpeed;
+        this.status = CarStatus.OK;
+    }
+
+
 
 }

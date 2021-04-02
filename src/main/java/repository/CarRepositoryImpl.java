@@ -1,6 +1,5 @@
-package services;
+package repository;
 
-import domain.Car;
 import org.springframework.stereotype.Repository;
 
 @Repository

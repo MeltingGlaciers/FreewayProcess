@@ -1,4 +1,4 @@
-package services;
+package repository;
 
 public interface FreewayRepository {
 }

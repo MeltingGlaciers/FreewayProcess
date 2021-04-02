@@ -3,5 +3,5 @@ package services;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class FreewayProcessRepositoryImpl implements FreewayProcessRepository {
+public class FreewayRepositoryImpl implements FreewayRepository{
 }

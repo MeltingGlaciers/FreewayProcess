@@ -2,7 +2,6 @@ package domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 @Getter
@@ -19,7 +18,5 @@ public class Car {
         this.initSpeed = initSpeed;
         this.status = CarStatus.OK;
     }
-
-
 
 }

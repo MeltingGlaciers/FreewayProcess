@@ -11,7 +11,7 @@ public class Car {
 
     private CarStatus status;
 
-    private int initSpeed;
+    private Integer initSpeed;
 
     public Car(int initSpeed){
 

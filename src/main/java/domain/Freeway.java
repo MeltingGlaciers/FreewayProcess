@@ -9,5 +9,5 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Freeway {
 
-    private int length;
+    private Integer length;
 }

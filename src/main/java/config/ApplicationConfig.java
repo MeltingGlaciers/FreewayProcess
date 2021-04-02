@@ -11,19 +11,19 @@ public class ApplicationConfig {
 
 
     @Value("${minInitSpeed}")
-    private int minInitSpeed;
+    private Integer minInitSpeed;
 
     @Value("${maxInitSpeed}")
-    private int maxInitSpeed;
+    private Integer maxInitSpeed;
 
     @Value("${artificialShortTermDelayChance}")
-    private double artificialShortTermDelayChance;
+    private Double artificialShortTermDelayChance;
 
     @Value("${minArtificialShortTermDelayTime}")
-    private int minArtificialShortTermDelayTime;
+    private Integer minArtificialShortTermDelayTime;
 
     @Value("${maxArtificialShortTermDelayTime}")
-    private int maxArtificialShortTermDelayTime;
+    private Integer maxArtificialShortTermDelayTime;
 
 
 

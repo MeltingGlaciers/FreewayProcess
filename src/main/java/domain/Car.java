@@ -8,6 +8,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 public class Car {
+    private Integer id;
 
     private CarStatus status;
 

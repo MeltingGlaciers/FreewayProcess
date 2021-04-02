@@ -13,6 +13,8 @@ import java.util.List;
 @AllArgsConstructor
 public class Freeway {
 
+    private Integer id;
+
     private Integer length;
 
     List<Car> cars;

@@ -1,5 +1,7 @@
-package domain;
+package data;
 
+import data.entity.Car;
+import data.entity.Freeway;
 import org.junit.BeforeClass;
 import org.junit.Test;
 

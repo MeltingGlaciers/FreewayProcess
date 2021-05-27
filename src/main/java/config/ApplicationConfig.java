@@ -10,19 +10,19 @@ import org.springframework.context.annotation.PropertySource;
 public class ApplicationConfig {
 
 
-    @Value("${minInitSpeed}")
+    @Value("${init.speed.min}")
     private Integer minInitSpeed;
 
-    @Value("${maxInitSpeed}")
+    @Value("${init.speed.max}")
     private Integer maxInitSpeed;
 
-    @Value("${artificialShortTermDelayChance}")
+    @Value("${artificial.short_term_delay.probability}")
     private Double artificialShortTermDelayChance;
 
-    @Value("${minArtificialShortTermDelayTime}")
+    @Value("${artificial.short_term_delay.time.min}")
     private Integer minArtificialShortTermDelayTime;
 
-    @Value("${maxArtificialShortTermDelayTime}")
+    @Value("${artificial.short_term_delay.time.max}")
     private Integer maxArtificialShortTermDelayTime;
 
 

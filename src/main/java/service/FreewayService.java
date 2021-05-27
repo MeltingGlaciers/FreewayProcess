@@ -1,32 +1,18 @@
 package service;
 
-import config.ApplicationConfig;
-import domain.CrushRegistrar;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-import repository.CarRepository;
-import repository.CrushRegistrarRepository;
-import repository.FreewayRepository;
 
-@Component
-public class FreewayService {
+import data.entity.Car;
+import data.entity.Freeway;
 
-    private CarRepository carRepository;
-    @Autowired
-    public void setCarRepository(CarRepository carRepository) { this.carRepository = carRepository;}
+import java.util.List;
+import java.util.Optional;
 
-    private CrushRegistrarRepository crushRegistrarRepository;
-    @Autowired
-    public void setCarRepository(CrushRegistrarRepository crushRegistrarRepository) {
-        this.crushRegistrarRepository = crushRegistrarRepository;
-    }
+public interface FreewayService {
 
-    private FreewayRepository freewayRepository;
-    @Autowired
-    public void setFreewayRepository(FreewayRepository freewayRepository) {this.freewayRepository = freewayRepository;}
-
-    private ApplicationConfig applicationConfig;
-    @Autowired
-    public void setApplicationConfig(ApplicationConfig applicationConfig) { this.applicationConfig = applicationConfig;}
+    Optional<Freeway> getById(Integer id);
+    void save(Freeway freeway);
+    void update(Integer id, Freeway freeway);
+    void delete(Integer id);
+    List<Freeway> findAll();
 
 }

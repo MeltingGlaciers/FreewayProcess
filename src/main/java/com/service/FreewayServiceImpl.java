@@ -41,6 +41,13 @@ public class FreewayServiceImpl implements FreewayService{
     }
 
     @Override
+    public void addFromDto(Integer length) {
+        Freeway freeway = new Freeway();
+        freeway.setLength(length);
+        repository.save(freeway);
+    }
+
+    @Override
     public List<Freeway> findAll() {
         return repository.findAll();
     }

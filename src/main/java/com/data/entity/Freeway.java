@@ -23,12 +23,10 @@ public class Freeway {
     @Column
     private Integer length;
 
-    @OneToMany
-    @JoinColumn( name = "freeway_id", referencedColumnName = "id")
-    List<Car> cars;
+    @OneToMany(mappedBy = "freeway")
+    private List<Car> cars;
 
-    @OneToMany
-    @JoinColumn( name = "freeway_id", referencedColumnName = "id")
+    @OneToMany(mappedBy = "freeway")
     List<Crush> crushes;
 
 }

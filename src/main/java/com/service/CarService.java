@@ -13,7 +13,7 @@ public interface CarService {
     void save(Car car);
     void update(Integer id, Car car);
     void delete(Integer id);
-    void addFromDTO(CarDTO dto);
+    Integer addFromDTO(CarDTO dto);
     List<Car> findAll();
 
 }

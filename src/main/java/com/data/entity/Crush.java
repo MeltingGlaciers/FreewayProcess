@@ -27,8 +27,10 @@ public class Crush {
     @Column( name = "crush_position")
     private Integer crushPosition;
 
-    @OneToMany
-    @JoinColumn( name = "crush_id", referencedColumnName = "id")
+    @OneToMany(mappedBy = "crush")
     private List<Car> crushMembers;
+
+    @ManyToOne
+    private Freeway freeway;
 
 }

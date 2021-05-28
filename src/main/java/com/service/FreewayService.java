@@ -12,6 +12,7 @@ public interface FreewayService {
     void save(Freeway freeway);
     void update(Integer id, Freeway freeway);
     void delete(Integer id);
+    void addFromDto(Integer length);
     List<Freeway> findAll();
 
 }

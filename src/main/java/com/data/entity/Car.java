@@ -29,4 +29,8 @@ public class Car {
     @JoinColumn(name = "crush_id", referencedColumnName = "id")
     private Crush crush;
 
+    @ManyToOne
+    @JoinColumn(name = "freeway_id", referencedColumnName = "id")
+    private Freeway freeway;
+
 }

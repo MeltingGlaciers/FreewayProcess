@@ -41,11 +41,12 @@ public class CarServiceImpl implements CarService{
     }
 
     @Override
-    public void addFromDTO(CarDTO dto){
+    public Integer addFromDTO(CarDTO dto){
         Car car = new Car();
         car.setStatus(dto.getStatus().getNumeredStatus());
         car.setInitSpeed(dto.getInitSpeed());
         repository.save(car);
+        return car.getId();
     }
 
     @Override

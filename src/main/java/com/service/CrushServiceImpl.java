@@ -1,8 +1,8 @@
 package com.service;
 
 import com.data.dao.CrushRepository;
+import com.data.dto.CrushDTO;
 import com.data.entity.Crush;
-import com.data.entity.Freeway;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,11 +35,20 @@ public class CrushServiceImpl implements CrushService{
 
     @Override
     public void delete(Integer id) {
-
+        repository.deleteById(id);
     }
 
     @Override
-    public List<Freeway> findAll() {
+    public Integer addFromDTO(CrushDTO dto) {
+        Crush crush = new Crush();
+        crush.setDate(dto.getDate());
+        crush.setCrushPosition(dto.getCrushPos());
+        repository.save(crush);
+        return crush.getId();
+    }
+
+    @Override
+    public List<Crush> findAll() {
         return null;
     }
 }
